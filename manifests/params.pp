@@ -87,6 +87,8 @@ class locales::params {
       $package           = 'glibc'
       $update_locale_pkg = false
       $locale_gen_cmd    = '/usr/bin/locale-gen' # /usr/sbin will also work but considered legacy
+      $update_locale_cmd = undef
+      $supported_locales = undef
       $config_file       = '/etc/locale.gen'
       $default_file      = '/etc/locale.conf'
     }
